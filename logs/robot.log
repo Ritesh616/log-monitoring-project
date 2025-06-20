@@ -1,0 +1,2 @@
+{"observed_timestamp": "1727914033000000003", "observed_timestamp_rfc3339": "2024-10-03T05:37:13.175748+05:30", "instrumentation_scope": "robot_events", "host_name": "4c0101bc0a9f", "severity_text": "INFO", "log": "Robot started successfully"}
+{"observed_timestamp": "1727914034000000004", "observed_timestamp_rfc3339": "2024-10-03T05:38:13.175748+05:30", "instrumentation_scope": "robot_events", "host_name": "4c0101bc0a9f", "severity_text": "ERROR", "log": "Sensor failure detected"}

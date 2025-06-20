@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  grafana:
+    build:
+      context: .
+      dockerfile: Dockerfile.grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - loki
+
+  loki:
+    build:
+      context: .
+      dockerfile: Dockerfile.loki
+    ports:
+      - "3100:3100"
+
+  promtail:
+    build:
+      context: .
+      dockerfile: Dockerfile.promtail
+    volumes:
+      - ./logs:/var/log/robot
+      - ./promtail-config.yaml:/etc/promtail/config.yaml
